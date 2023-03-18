@@ -81,10 +81,10 @@ def p1_movement(p1_rect):
         p1_rect.y -= PLAYER_VEL
     if keys[pygame.K_s] and p1_rect.bottom <= HEIGHT:
         p1_rect.y += PLAYER_VEL
-    if keys[pygame.K_a] and p1_rect.left >= 0:
-        p1_rect.x -= PLAYER_VEL
-    if keys[pygame.K_d] and p1_rect.right <= WIDTH:
-        p1_rect.x += PLAYER_VEL
+    #if keys[pygame.K_a] and p1_rect.left >= 0:
+        #p1_rect.x -= PLAYER_VEL
+    #if keys[pygame.K_d] and p1_rect.right <= WIDTH:
+        #p1_rect.x += PLAYER_VEL
 
 def p2_movement(p2_rect):
     keys = pygame.key.get_pressed()
@@ -92,10 +92,10 @@ def p2_movement(p2_rect):
         p2_rect.y -= PLAYER_VEL
     if keys[pygame.K_DOWN] and p2_rect.bottom <= HEIGHT:
         p2_rect.y += PLAYER_VEL
-    if keys[pygame.K_LEFT] and p2_rect.left >= 0:
-        p2_rect.x -= PLAYER_VEL
-    if keys[pygame.K_RIGHT] and p2_rect.right <= WIDTH:
-        p2_rect.x += PLAYER_VEL
+    #if keys[pygame.K_LEFT] and p2_rect.left >= 0:
+        #p2_rect.x -= PLAYER_VEL
+    #if keys[pygame.K_RIGHT] and p2_rect.right <= WIDTH:
+        #p2_rect.x += PLAYER_VEL
 
 def ball_movement(ball_rect, ball_vel_x, ball_vel_y, p1_rect, p2_rect, ball_speed_dif):
     global collide_with_bottom, collide_p2
