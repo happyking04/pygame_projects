@@ -138,7 +138,7 @@ def main():
     clock = pygame.time.Clock()
     run = True
     while run:
-        space_jazz.play()
+        #space_jazz.play()
         clock.tick(FPS)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
